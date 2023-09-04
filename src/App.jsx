@@ -8,6 +8,7 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import {ThemeProvider} from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
+import Error from "./Error";
 
 const App = () => {
 
@@ -43,6 +44,8 @@ const App = () => {
         <Route path="/about" element= {<About/>}/>
         <Route path="/services" element= {<Services/>}/>
         <Route path="/contact" element= {<Contact/>}/>
+        <Route path="*" element= {<Error/>}/>
+
       </Routes>
       <Footer/>
     </BrowserRouter>
