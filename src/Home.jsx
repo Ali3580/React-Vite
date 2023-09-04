@@ -4,6 +4,8 @@ import { useGlobalContext } from './context';
 import Services from './Services';
 import Contact from './Contact';
 import "./App.css";
+import Search from './Search';
+import Pagination from './Pagination';
 
 
 const Home = () => {
@@ -14,6 +16,8 @@ const Home = () => {
   return (
     <>
     <HeroSection/>
+    <Search/>
+    <Pagination/>
     <Services/>
     <Contact/>
     </>

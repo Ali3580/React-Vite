@@ -17,8 +17,7 @@ const Stories = () => {
     
     <>
 
-    <Search/>
-    <Pagination/>
+    
    
       <div className="stories-div">
         {hits.map((curPost) => {
