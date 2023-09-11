@@ -55,6 +55,8 @@ const AppProvider = ({ children }) => {
 
   // to remove the post
   const removePost = (post_ID) =>{
+    event.preventDefault();
+
     dispatch({
       type: "REMOVE_POST",
       payload: post_ID,
@@ -74,13 +76,13 @@ const AppProvider = ({ children }) => {
 
   const getNextPage = () => {
     dispatch({
-      type: NEXT_PAGE,
+      type: "NEXT_PAGE",
     });
   };
   
   const getPrevPage = () => {
     dispatch({
-      type: PREV_PAGE,
+      type: "PREV_PAGE",
     });
   };
 

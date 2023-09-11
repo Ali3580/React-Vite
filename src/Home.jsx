@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import HeroSection from './Components/HeroSection';
-import { useGlobalContext } from './context';
+import { useGlobalContext } from './Context';
 import Services from './Services';
 import Contact from './Contact';
 import "./App.css";
@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <>
     <HeroSection/>
-    <Search/>
-    <Pagination/>
+    {/* <Search/>
+    <Pagination/> */}
     <Services/>
     <Contact/>
     </>

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { styled } from "styled-components";
 import { Button } from "../styles/Button";
-import { useGlobalContext } from "../Context";
+import { useGlobalContext } from "../context";
 
 
 const HeroSection = () => {
@@ -20,9 +20,11 @@ const HeroSection = () => {
             dolores earum, ratione aspernatur maxime explicabo rem ab laudantium
             eius cupiditate.
           </p>
+          <div>
           <Button className="btn consult-btn">
             <NavLink to="/contact">Consult Us </NavLink>
           </Button>
+          </div>
         </div>
         
         <div className="section-hero-image">

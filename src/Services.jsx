@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "./context";
+import { useGlobalContext } from "./Context";
 import Search from "./Search";
 import Pagination from "./Pagination";
 
@@ -8,7 +8,10 @@ const Stories = () => {
   if (isLoading) {
     return (
       <>
-        <h1>Loading.....</h1>
+        <div className="container">
+          <p>Loading...</p>
+          <div className="loading"></div>
+        </div>
       </>
     );
   }
@@ -17,8 +20,9 @@ const Stories = () => {
     
     <>
 
-    
-   
+    <Search/>
+    <Pagination/>
+
       <div className="stories-div">
         {hits.map((curPost) => {
           const { title, author, objectID, url, num_comments } = curPost;

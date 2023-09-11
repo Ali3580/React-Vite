@@ -20,7 +20,36 @@ h1 {
   margin: 2rem 0;
   text-align: center;
 }
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .container p{
+  font-size: 3.2rem;
+  margin: 2rem 0;
+  text-align: center;
+  font-weight: 800;
+  color: black;
+} */
+.loading{
+  padding: 4px;
+  margin: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border-top: 3px solid black;
+  animation: spin 1s linear infinite;
+}
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 h2 {
   font-family: "IBM Plex Serif", serif;
   font-size: 2.4rem;
@@ -45,6 +74,7 @@ span {
   align-items: center;
   flex-direction: column;
   gap: 4rem;
+  background-color: cornsilk;
 }
 
 .card {

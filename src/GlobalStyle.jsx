@@ -43,6 +43,10 @@ h1{
   font-weight: 900;
 }
 
+.hero-heading{
+  text-align: left;
+}
+
 h2 {
    color: ${({ theme }) => theme.colors.heading};
    font-size: 4.4rem;
