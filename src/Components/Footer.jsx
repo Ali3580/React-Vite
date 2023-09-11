@@ -34,7 +34,7 @@ const Footer = () => {
           {/* 2nd column */}
           <div className="footer-subscribe">
             <h3>Contact Us to get important updates</h3>
-            <form action="#">
+            <form action="#" className="footer-form">
               <input
                 type="email"
                 required

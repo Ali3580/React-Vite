@@ -35,7 +35,9 @@ body::-webkit-scrollbar-thumb {
     border-radius: 9px;
     background-clip: content-box;
 }
-
+.footer-form{
+  display: block;
+}
 
 h1{
   color:${({ theme }) => theme.colors.heading};
