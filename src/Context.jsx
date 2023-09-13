@@ -75,6 +75,7 @@ const AppProvider = ({ children }) => {
   // pagination
 
   const getNextPage = () => {
+    
     dispatch({
       type: "NEXT_PAGE",
     });

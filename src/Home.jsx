@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import HeroSection from './Components/HeroSection';
-import { useGlobalContext } from './Context';
+import { useGlobalContext } from './context';
 import Services from './Services';
 import Contact from './Contact';
 import "./App.css";
